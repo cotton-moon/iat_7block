@@ -1,4 +1,4 @@
-define(['pipAPI', 'https://baranan.github.io/minno-tasks/quiat8.js'], function(APIConstructor, iatExtension){
+define(['pipAPI', 'https://cotton-moon.github.io/iat_7block/structure1.js'], function(APIConstructor, iatExtension){
     var API = new APIConstructor();
 
 	return iatExtension({
@@ -18,7 +18,11 @@ define(['pipAPI', 'https://baranan.github.io/minno-tasks/quiat8.js'], function(A
     			{image : 'old6.jpg'}
 			], 
 			//Stimulus css (style)
-			stimulusCss : {color:'#31940F','font-size':'1.8em'}
+			stimulusCss : {color:'#31940F',
+				       'font-size':'1.8em', 
+				       width: '200px',
+   	 				height: '250px',
+    					objectFit: 'cover'}
 		},	
 		category2 :	{
 			name : 'YOUNG', //Will appear in the data.
@@ -35,7 +39,10 @@ define(['pipAPI', 'https://baranan.github.io/minno-tasks/quiat8.js'], function(A
     			{image : 'young5.jpg'}, 
     			{image : 'young6.jpg'}			], 
 			//Stimulus css
-			stimulusCss : {color:'#31940F','font-size':'1.8em'}
+			stimulusCss : {color:'#31940F','font-size':'1.8em',
+				      width: '200px',
+   	 				height: '250px',
+    					objectFit: 'cover'}
 		},	
 		attribute2 :
 			{
@@ -56,7 +63,7 @@ define(['pipAPI', 'https://baranan.github.io/minno-tasks/quiat8.js'], function(A
 				//Stimulus css
 				stimulusCss : {color:'#0000FF','font-size':'2.3em'}
 			},
-	attribute1 :
+		attribute1 :
 			{
 				name : 'INACTIVE',
 				title : {
@@ -75,7 +82,6 @@ define(['pipAPI', 'https://baranan.github.io/minno-tasks/quiat8.js'], function(A
 				//Stimulus css
 				stimulusCss : {color:'#0000FF','font-size':'2.3em'}
 			},
-
 		base_url : {//Where are your images at?
 			image : 'https://cotton-moon.github.io/iat_test/'
 		} 

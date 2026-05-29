@@ -1,89 +1,45 @@
-define(['pipAPI', https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/IAT/qualtrics/quiat9.js'], function(APIConstructor, iatExtension){
+define(['pipAPI', 'https://baranan.github.io/minno-tasks/quiat8.js'], function(APIConstructor, iatExtension){
     var API = new APIConstructor();
 
 	return iatExtension({
 		category1 : {
-			name : 'OLD', //Will appear in the data.
+			name : 'Black people', //Will appear in the data.
 			title : {
-				media : {word : 'OLD'}, //Name of the category presented in the task.
+				media : {word : 'Black people'}, //Name of the category presented in the task.
 				css : {color:'#31940F','font-size':'2em'}, //Style of the category title.
 				height : 4 //Used to position the "Or" in the combined block.
 			}, 
 			stimulusMedia : [ //Stimuli content as PIP's media objects
-    		    {image : 'old1.jpg'}, 
-    			{image : 'old2.jpg'}, 
-    			{image : 'old3.jpg'}, 
-    			{image : 'old4.jpg'}, 
-    			{image : 'old5.jpg'}, 
-    			{image : 'old6.jpg'}
+    		    {image : 'black1.jpg'}, 
+    			{image : 'black2.jpg'}, 
+    			{image : 'black3.jpg'}, 
+    			{image : 'black4.jpg'}, 
+    			{image : 'black5.jpg'}, 
+    			{image : 'black6.jpg'}
 			], 
 			//Stimulus css (style)
-			stimulusCss : {color:'#31940F',
-				       'font-size':'1.8em', 
-				       width: '200px',
-   	 				height: '250px',
-    					objectFit: 'cover'}
+			stimulusCss : {color:'#31940F','font-size':'1.8em'}
 		},	
 		category2 :	{
-			name : 'YOUNG', //Will appear in the data.
+			name : 'White people', //Will appear in the data.
 			title : {
-				media : {word : 'YOUNG'}, //Name of the category presented in the task.
+				media : {word : 'White people'}, //Name of the category presented in the task.
 				css : {color:'#31940F','font-size':'2em'}, //Style of the category title.
 				height : 4 //Used to position the "Or" in the combined block.
 			}, 
 			stimulusMedia : [ //Stimuli content as PIP's media objects
-    		    {image : 'young1.jpg'}, 
-    			{image : 'young2.jpg'}, 
-    			{image : 'young3.jpg'}, 
-    			{image : 'young4.jpg'}, 
-    			{image : 'young5.jpg'}, 
-    			{image : 'young6.jpg'}			], 
+    		    {image : 'yf1.jpg'}, 
+    			{image : 'yf4.jpg'}, 
+    			{image : 'yf5.jpg'}, 
+    			{image : 'ym2.jpg'}, 
+    			{image : 'ym3.jpg'}, 
+    			{image : 'ym5.jpg'}			], 
 			//Stimulus css
-			stimulusCss : {color:'#31940F','font-size':'1.8em',
-				      width: '200px',
-   	 				height: '250px',
-    					objectFit: 'cover'}
+			stimulusCss : {color:'#31940F','font-size':'1.8em'}
 		},	
-		attribute2 :
-			{
-				name : 'ACTIVE',
-				title : {
-					media : {word : 'ACTIVE'},
-					css : {color:'#0000FF','font-size':'1.8em'},
-					height : 4 //Used to position the "Or" in the combined block.
-				},
-				stimulusMedia : [ //Stimuli content as PIP's media objects
-					{word: 'dynamic'},
-					{word: 'energetic'},
-					{word: 'fast'},
-					{word: 'lively'},
-					{word: 'quick'},
-					{word: 'strong'}
-				],
-				//Stimulus css
-				stimulusCss : {color:'#0000FF','font-size':'2.3em'}
-			},
-		attribute1 :
-			{
-				name : 'INACTIVE',
-				title : {
-					media : {word : 'INACTIVE'},
-					css : {color:'#0000FF','font-size':'1.8em'},
-					height : 4 //Used to position the "Or" in the combined block.
-				},
-				stimulusMedia : [ //Stimuli content as PIP's media objects
-					{word: 'forgetful'},
-					{word: 'lethargic'},
-					{word: 'slow'},
-					{word: 'tired'},
-					{word: 'weak'},
-					{word: 'weary'}
-				],
-				//Stimulus css
-				stimulusCss : {color:'#0000FF','font-size':'2.3em'}
-			},
+
 		base_url : {//Where are your images at?
-			image : 'https://cotton-moon.github.io/iat_test/'
+			image : 'https://baranan.github.io/minno-tasks/images/'
 		} 
 	});
 });
